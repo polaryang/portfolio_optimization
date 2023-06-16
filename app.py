@@ -54,7 +54,7 @@ with col2:
 
 tickers_string = st.text_input('Enter all stock tickers to be included in portfolio separated by commas \
 								WITHOUT spaces, e.g. "MA,META,V,AMZN,JPM,BA"', '').upper()
-tickers = tickers_string.replace(' ','')
+tickers_string = tickers_string.replace(' ','')
 tickers = tickers_string.split(',')
 
 try:
