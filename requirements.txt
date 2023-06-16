@@ -7,3 +7,4 @@ matplotlib
 seaborn
 gunicorn
 yfinance
+numpy
