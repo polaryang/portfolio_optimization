@@ -42,7 +42,7 @@ def plot_efficient_frontier_and_max_sharpe(mu, S):
 	return fig
 
 st.set_page_config(page_title = "Bohmian's Stock Portfolio Optimizer", layout = "wide")
-st.header("Bohmian's Stock Portfolio Optimizer")
+st.header("Stock Portfolio Optimizer")
 
 col1, col2 = st.columns(2)
 
@@ -54,6 +54,7 @@ with col2:
 
 tickers_string = st.text_input('Enter all stock tickers to be included in portfolio separated by commas \
 								WITHOUT spaces, e.g. "MA,META,V,AMZN,JPM,BA"', '').upper()
+tickers = tickers_string.replace(' ','')
 tickers = tickers_string.split(',')
 
 try:
