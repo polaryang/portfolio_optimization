@@ -8,6 +8,7 @@ from pypfopt.efficient_frontier import EfficientFrontier
 from pypfopt import risk_models
 from pypfopt import expected_returns
 from pypfopt import objective_functions
+import yfinance as yf
 
 st.header('Portfolio Optimization Tool')
 st.subheader("This tool is designed to help you determine the optimum distribution of your portfolio based on how much money you have to invest, the risk, and the potential return.  It is designed to optimize on the max Sharpe Ratio.")
