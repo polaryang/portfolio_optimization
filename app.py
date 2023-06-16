@@ -52,8 +52,7 @@ with col1:
 with col2:
 	end_date = st.date_input("End Date") # it defaults to current date
 
-tickers_string = st.text_input('Enter all stock tickers to be included in portfolio separated by commas \
-								WITHOUT spaces, e.g. "MA,META,V,AMZN,JPM,BA"', '').upper()
+tickers_string = st.text_input('Enter all stock tickers to be included in portfolio separated by commas').upper()
 tickers_string = tickers_string.replace(' ','')
 tickers = tickers_string.split(',')
 
