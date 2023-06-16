@@ -843,7 +843,7 @@ df = pd.DataFrame()
 #Store the adjusted close price of stock into the data frame
 for stock in assets:
         #df[stock] = web.DataReader(stock,data_source='yahoo',start='2018-01-01' , end=today)['Adj Close']
-        df[stock] = = yf.download(stock, start='2018-01-01', end=today)['Adj Close']
+        df[stock] = yf.download(stock, start='2018-01-01', end=today)['Adj Close']
         
 # Create the title 'Portfolio Adj Close Price History
 title = 'Portfolio Price History    '
